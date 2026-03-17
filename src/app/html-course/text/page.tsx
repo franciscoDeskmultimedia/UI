@@ -110,7 +110,7 @@ export default function HtmlTextPage() {
           >
             <QuizSection
                 chapterId="html-text"
-                onComplete={(score) => saveQuizResult("html-text", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-text", answers, score, total)}
             />
           </motion.div>
         </div>

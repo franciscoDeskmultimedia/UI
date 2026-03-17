@@ -115,7 +115,7 @@ export default function CssColorsPage() {
           >
             <QuizSection
                 chapterId="css-colors"
-                onComplete={(score) => saveQuizResult("css-colors", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-colors", answers, score, total)}
             />
           </motion.div>
         </div>

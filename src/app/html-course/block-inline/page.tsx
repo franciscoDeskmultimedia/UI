@@ -120,7 +120,7 @@ export default function HtmlBlockInlinePage() {
           >
             <QuizSection
                 chapterId="html-block"
-                onComplete={(score) => saveQuizResult("html-block", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-block", answers, score, total)}
             />
           </motion.div>
         </div>

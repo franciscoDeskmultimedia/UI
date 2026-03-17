@@ -37,7 +37,7 @@ export default function HtmlFinalQuizPage() {
           >
             <QuizSection
                 chapterId="html-final"
-                onComplete={(score) => saveQuizResult("html-final", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-final", answers, score, total)}
             />
           </motion.div>
         </div>

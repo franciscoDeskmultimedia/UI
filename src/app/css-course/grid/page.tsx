@@ -180,7 +180,7 @@ footer { grid-area: footer; background: #5cf0d0; }`}
           >
             <QuizSection
                 chapterId="css-grid"
-                onComplete={(score) => saveQuizResult("css-grid", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-grid", answers, score, total)}
             />
           </motion.div>
         </div>

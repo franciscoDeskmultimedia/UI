@@ -119,7 +119,7 @@ header.innerText = "Updated Title";`}
           >
             <QuizSection
                 chapterId="js-dom"
-                onComplete={(score) => saveQuizResult("js-dom", score)}
+                onComplete={(answers, score, total) => saveQuizResult("js-dom", answers, score, total)}
             />
           </motion.div>
         </div>

@@ -187,7 +187,7 @@ export default function FlexboxPage() {
           >
             <QuizSection
                 chapterId="css-flexbox"
-                onComplete={(score) => saveQuizResult("css-flexbox", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-flexbox", answers, score, total)}
             />
           </motion.div>
         </div>

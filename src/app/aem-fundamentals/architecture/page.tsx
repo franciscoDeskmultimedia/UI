@@ -98,7 +98,7 @@ export default function AemArchitecturePage() {
           >
             <QuizSection
                 chapterId="aem-arch"
-                onComplete={(score) => saveQuizResult("aem-arch", score)}
+                onComplete={(answers, score, total) => saveQuizResult("aem-arch", answers, score, total)}
             />
           </motion.div>
         </div>

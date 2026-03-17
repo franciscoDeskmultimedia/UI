@@ -120,7 +120,7 @@ export default function HtmlMediaPage() {
           >
             <QuizSection
                 chapterId="html-media"
-                onComplete={(score) => saveQuizResult("html-media", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-media", answers, score, total)}
             />
           </motion.div>
         </div>

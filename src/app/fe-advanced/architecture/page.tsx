@@ -191,7 +191,7 @@ console.log(getThemeColor('dark'));`}
           >
             <QuizSection
                 chapterId="fe-adv-arch"
-                onComplete={(score) => saveQuizResult("fe-adv-arch", score)}
+                onComplete={(answers, score, total) => saveQuizResult("fe-adv-arch", answers, score, total)}
             />
           </motion.div>
         </div>

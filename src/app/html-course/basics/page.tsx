@@ -126,7 +126,7 @@ export default function HtmlBasicsPage() {
           >
             <QuizSection
                 chapterId="html-basics"
-                onComplete={(score) => saveQuizResult("html-basics", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-basics", answers, score, total)}
             />
           </motion.div>
         </div>

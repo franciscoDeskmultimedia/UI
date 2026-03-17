@@ -205,7 +205,7 @@ loadUser();`}
           >
             <QuizSection
                 chapterId="fe-async"
-                onComplete={(score) => saveQuizResult("fe-async", score)}
+                onComplete={(answers, score, total) => saveQuizResult("fe-async", answers, score, total)}
             />
           </motion.div>
         </div>

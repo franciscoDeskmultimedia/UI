@@ -134,7 +134,7 @@ export default function AemComponentsPage() {
           >
             <QuizSection
                 chapterId="aem-components"
-                onComplete={(score) => saveQuizResult("aem-components", score)}
+                onComplete={(answers, score, total) => saveQuizResult("aem-components", answers, score, total)}
             />
           </motion.div>
         </div>

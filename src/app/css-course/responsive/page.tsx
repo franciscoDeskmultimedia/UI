@@ -148,7 +148,7 @@ export default function ResponsivePage() {
           >
             <QuizSection
                 chapterId="css-responsive"
-                onComplete={(score) => saveQuizResult("css-responsive", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-responsive", answers, score, total)}
             />
           </motion.div>
         </div>

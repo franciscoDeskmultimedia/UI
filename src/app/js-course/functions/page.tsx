@@ -112,7 +112,7 @@ let result = sayHello("John");
           >
             <QuizSection
                 chapterId="js-functions"
-                onComplete={(score) => saveQuizResult("js-functions", score)}
+                onComplete={(answers, score, total) => saveQuizResult("js-functions", answers, score, total)}
             />
           </motion.div>
         </div>

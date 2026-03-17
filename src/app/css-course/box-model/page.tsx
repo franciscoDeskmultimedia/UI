@@ -138,7 +138,7 @@ export default function CssBoxModelPage() {
           >
             <QuizSection
                 chapterId="css-box"
-                onComplete={(score) => saveQuizResult("css-box", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-box", answers, score, total)}
             />
           </motion.div>
         </div>

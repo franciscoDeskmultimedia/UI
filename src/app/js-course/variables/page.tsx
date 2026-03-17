@@ -111,7 +111,7 @@ let radius = 5;`}
           >
             <QuizSection
                 chapterId="js-variables"
-                onComplete={(score) => saveQuizResult("js-variables", score)}
+                onComplete={(answers, score, total) => saveQuizResult("js-variables", answers, score, total)}
             />
           </motion.div>
         </div>

@@ -217,7 +217,7 @@ export default function HtmlCssPage() {
           >
             <QuizSection
                 chapterId="fe-html-css"
-                onComplete={(score) => saveQuizResult("fe-html-css", score)}
+                onComplete={(answers, score, total) => saveQuizResult("fe-html-css", answers, score, total)}
             />
           </motion.div>
         </div>

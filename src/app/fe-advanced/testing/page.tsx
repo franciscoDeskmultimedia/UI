@@ -204,7 +204,7 @@ test('adds 2 + 2 to equal 4', () => {
           >
             <QuizSection
                 chapterId="fe-adv-testing"
-                onComplete={(score) => saveQuizResult("fe-adv-testing", score)}
+                onComplete={(answers, score, total) => saveQuizResult("fe-adv-testing", answers, score, total)}
             />
           </motion.div>
         </div>

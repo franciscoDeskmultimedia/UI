@@ -175,7 +175,7 @@ export default function PerformancePage() {
           >
             <QuizSection
                 chapterId="fe-adv-perf"
-                onComplete={(score) => saveQuizResult("fe-adv-perf", score)}
+                onComplete={(answers, score, total) => saveQuizResult("fe-adv-perf", answers, score, total)}
             />
           </motion.div>
         </div>

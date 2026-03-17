@@ -145,7 +145,7 @@ export default function HtmlListsTablesPage() {
           >
             <QuizSection
                 chapterId="html-lists"
-                onComplete={(score) => saveQuizResult("html-lists", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-lists", answers, score, total)}
             />
           </motion.div>
         </div>

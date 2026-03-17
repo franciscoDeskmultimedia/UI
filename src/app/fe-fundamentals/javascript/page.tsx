@@ -221,7 +221,7 @@ greet();`}
           >
             <QuizSection
                 chapterId="fe-javascript"
-                onComplete={(score) => saveQuizResult("fe-javascript", score)}
+                onComplete={(answers, score, total) => saveQuizResult("fe-javascript", answers, score, total)}
             />
           </motion.div>
         </div>

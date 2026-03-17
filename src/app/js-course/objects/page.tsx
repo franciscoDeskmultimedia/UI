@@ -116,7 +116,7 @@ const person = &#123;
           >
             <QuizSection
                 chapterId="js-objects"
-                onComplete={(score) => saveQuizResult("js-objects", score)}
+                onComplete={(answers, score, total) => saveQuizResult("js-objects", answers, score, total)}
             />
           </motion.div>
         </div>

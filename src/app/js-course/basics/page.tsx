@@ -109,7 +109,7 @@ z = x + y;      // Statement 4
           >
             <QuizSection
                 chapterId="js-basics"
-                onComplete={(score) => saveQuizResult("js-basics", score)}
+                onComplete={(answers, score, total) => saveQuizResult("js-basics", answers, score, total)}
             />
           </motion.div>
         </div>

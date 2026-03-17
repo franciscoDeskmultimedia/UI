@@ -107,7 +107,7 @@ export default function CssBasicsPage() {
           >
             <QuizSection
                 chapterId="css-basics"
-                onComplete={(score) => saveQuizResult("css-basics", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-basics", answers, score, total)}
             />
           </motion.div>
         </div>

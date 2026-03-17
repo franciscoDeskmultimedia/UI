@@ -134,7 +134,7 @@ export default function HtmlA11yPage() {
           >
             <QuizSection
                 chapterId="html-a11y"
-                onComplete={(score) => saveQuizResult("html-a11y", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-a11y", answers, score, total)}
             />
           </motion.div>
         </div>

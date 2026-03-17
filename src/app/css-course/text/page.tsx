@@ -110,7 +110,7 @@ export default function CssTextPage() {
           >
             <QuizSection
                 chapterId="css-text"
-                onComplete={(score) => saveQuizResult("css-text", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-text", answers, score, total)}
             />
           </motion.div>
         </div>

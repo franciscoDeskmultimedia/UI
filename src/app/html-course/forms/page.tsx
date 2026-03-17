@@ -137,7 +137,7 @@ export default function FormsPage() {
           >
             <QuizSection
                 chapterId="html-forms"
-                onComplete={(score) => saveQuizResult("html-forms", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-forms", answers, score, total)}
             />
           </motion.div>
         </div>

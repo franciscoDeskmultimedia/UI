@@ -131,7 +131,7 @@ export default function SeoPage() {
           >
             <QuizSection
                 chapterId="html-seo"
-                onComplete={(score) => saveQuizResult("html-seo", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-seo", answers, score, total)}
             />
           </motion.div>
         </div>

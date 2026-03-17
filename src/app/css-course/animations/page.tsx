@@ -165,7 +165,7 @@ export default function AnimationsPage() {
           >
             <QuizSection
                 chapterId="css-animations"
-                onComplete={(score) => saveQuizResult("css-animations", score)}
+                onComplete={(answers, score, total) => saveQuizResult("css-animations", answers, score, total)}
             />
           </motion.div>
         </div>

@@ -150,7 +150,7 @@ export default function SemanticHtmlPage() {
           >
             <QuizSection
                 chapterId="html-semantic"
-                onComplete={(score) => saveQuizResult("html-semantic", score)}
+                onComplete={(answers, score, total) => saveQuizResult("html-semantic", answers, score, total)}
             />
           </motion.div>
         </div>

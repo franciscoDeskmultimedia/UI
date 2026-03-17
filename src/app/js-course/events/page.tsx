@@ -131,7 +131,7 @@ btn.addEventListener("click", () => {
           >
             <QuizSection
                 chapterId="js-events"
-                onComplete={(score) => saveQuizResult("js-events", score)}
+                onComplete={(answers, score, total) => saveQuizResult("js-events", answers, score, total)}
             />
           </motion.div>
         </div>
